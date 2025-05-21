@@ -32,6 +32,8 @@ MuscleBand is a web-connected EMG monitoring system that records and compares mu
 MIT
 
 ##  Start
+*Works on localhost, must update IP address and WiFi credentials
+
 Run "npm install" to install node modules.
 
 Run "npm run dev" to initiate server and then run web app.
