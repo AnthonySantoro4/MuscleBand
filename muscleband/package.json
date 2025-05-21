@@ -1,0 +1,61 @@
+{
+  "name": "muscleband",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "options": {
+    "allowedHosts": [
+      "localhost",
+      ".localhost"
+    ],
+    "proxy": "http://localhost:5002"
+  },
+  "scripts": {
+    "start": "set PORT=3000 && react-scripts --max-http-header-size=81920 start",
+    "server": "node server/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@svgr/plugin-svgo": "^8.1.0",
+    "@svgr/webpack": "^8.1.0",
+    "axios": "^1.8.1",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "css-select": "^5.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "js-cookie": "^3.0.5",
+    "mongoose": "^8.12.1",
+    "postcss": "^8.4.31",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.3.0",
+    "react-scripts": "^5.0.1",
+    "resolve-url-loader": "^5.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "serialize-javascript": "^6.0.2",
+    "svgo": "^3.3.2",
+    "workbox-webpack-plugin": "^7.3.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "web-vitals": "^4.2.4"
+  }
+}

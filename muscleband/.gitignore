@@ -1,0 +1,32 @@
+# === Node & React ===
+node_modules/
+build/
+coverage/
+*.log
+
+# === Environment Variables ===
+.env
+.env.*
+!.env.example  # Keep a clean sample file
+
+# === VS Code Config ===
+.vscode/
+
+# === OS / Editor Artifacts ===
+.DS_Store
+Thumbs.db
+
+# === React Public Artifacts ===
+*.local
+*.cache
+
+# === Arduino ===
+*.hex
+*.elf
+
+# === Embedded Git Conflict Folder (optional) ===
+muscleband/.git
+
+# === Temporary ===
+*.tmp
+*.swp
